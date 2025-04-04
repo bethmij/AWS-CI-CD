@@ -381,7 +381,7 @@
         };
 
         const xhr = new XMLHttpRequest();
-        xhr.open('POST', 'http://ai-lb-1245715781.ap-south-1.elb.amazonaws.com/predict', true);
+        xhr.open('POST', 'http://ai-lb-609899462.ap-south-1.elb.amazonaws.com//predict', true);
         xhr.setRequestHeader('Content-Type', 'application/json');
 
         xhr.onreadystatechange = function() {
@@ -389,7 +389,6 @@
                 // Reset button state
                 submitBtn.innerText = originalText;
                 submitBtn.disabled = false;
-
 
                 document.getElementById('resultPopup').classList.add('active');
 
